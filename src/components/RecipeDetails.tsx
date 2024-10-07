@@ -3,8 +3,6 @@ import { RecipeDetailsProps } from '@/types/types';
 import {useFetchRecipeDetails } from '../hooks/useFetchRecipeDetails';
 import { Col, Row } from 'react-bootstrap';
 
-
-
 const RecipeDetails: React.FC<RecipeDetailsProps> = ({ recipeId }) => {
 
 const {recipeDetails,  error} = useFetchRecipeDetails(recipeId);
